@@ -1,12 +1,11 @@
 name: 习讯云自动签到
 
 on:
-  workflow_dispatch:
   push:
     branches:
       - main
   schedule:
-    - cron: 0 8 * * *
+    - cron: 0 15 * * *
 
 jobs:
   sign:
